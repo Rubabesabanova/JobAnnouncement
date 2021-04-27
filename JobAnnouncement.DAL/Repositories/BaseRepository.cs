@@ -1,16 +1,15 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using JobAnnouncement.BLL.DTOs;
-using JobAnnouncement.BLL.Repositories;
 using JobAnnouncement.DAL.DAOs;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
 namespace JobAnnouncement.DAL.Repositories
 {
-    public abstract class BaseRepository<TDto, TDao, TContext> : IBaseRepository<TDto>
-     where TDto : BaseDTO
+    public abstract class BaseRepository< TDao, TContext> : IBaseRepository<TDao>
      where TDao : BaseDAO
      where TContext : DbContext
     {
@@ -21,11 +20,11 @@ namespace JobAnnouncement.DAL.Repositories
             _tdbcontext = tdbcontext;
         }
 
-        public TDto GetAll()
+        public ICollection<TDao> GetAll()
         {
             try
             {
-                return Mapper.Map<TDto>(_tdbcontext.Set<TDao>());
+                return (ICollection<TDao>)_tdbcontext.Set<TDao>();
             }
             catch (Exception ex)
             {
@@ -33,12 +32,12 @@ namespace JobAnnouncement.DAL.Repositories
             }
         }
 
-        public TDto GetById(int id)
+        public TDao GetById(int id)
         {
             try
             {
-                var dto = Mapper.Map<TDto>(_tdbcontext.Set<TDao>().FirstOrDefault(e => e.Id == id));
-                return dto;
+                var dao = _tdbcontext.Set<TDao>().FirstOrDefault(e => e.Id == id);
+                return dao;
             }
             catch (Exception ex)
             {
@@ -61,12 +60,12 @@ namespace JobAnnouncement.DAL.Repositories
             }
         }
 
-        public void Save(TDto obj, int userId = 0)
+        public void Save(TDao obj, int userId = 0)
         {
             throw new NotImplementedException();
         }
 
-        private void Add(TDto obj, int userId = 0)
+        private void Add(TDao obj, int userId = 0)
         {
             try
             {
@@ -92,7 +91,7 @@ namespace JobAnnouncement.DAL.Repositories
             }
         }
 
-        private void Update(TDto obj, int userId = 0)
+        private void Update(TDao obj, int userId = 0)
         {
             try
             {

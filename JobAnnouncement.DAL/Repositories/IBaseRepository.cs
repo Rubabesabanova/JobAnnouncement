@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JobAnnouncement.BLL.DTOs;
+using JobAnnouncement.DAL.DAOs;
 
 namespace JobAnnouncement.DAL.Repositories
 {
-    public interface IBaseRepository<TDto> where TDto : BaseDTO
+    public interface IBaseRepository<TDao> 
+        where TDao : BaseDAO
     {
-        TDto GetAll();
-        TDto GetById(int id);
+        ICollection<TDao> GetAll();
+        TDao GetById(int id);
         void Remove(int id, int userId = 0);
-        void Save(TDto obj, int userId = 0);
+        void Save(TDao obj, int userId = 0);
     }
 }

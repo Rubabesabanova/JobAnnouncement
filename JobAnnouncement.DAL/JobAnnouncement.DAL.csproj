@@ -147,10 +147,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JobAnnouncement.BLL\JobAnnouncement.BLL.csproj">
-      <Project>{8fc033d4-5391-462a-bfa8-ebde7939f4b7}</Project>
-      <Name>JobAnnouncement.BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\JobAnnouncement.Common\JobAnnouncement.Common.csproj">
       <Project>{457fecf9-f890-43db-a805-45493fa8ba45}</Project>
       <Name>JobAnnouncement.Common</Name>

@@ -117,6 +117,16 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Constants\JobNature.cs" />
     <Compile Include="Constants\UserRoles.cs" />
+    <Compile Include="DTOs\BaseDTO.cs" />
+    <Compile Include="DTOs\CategorySlider\CategorySliderDTO.cs" />
+    <Compile Include="DTOs\Category\CategoryDTO.cs" />
+    <Compile Include="DTOs\Contact\ContactDTO.cs" />
+    <Compile Include="DTOs\JobSlider\JobSliderDTO.cs" />
+    <Compile Include="DTOs\Job\JobDTO.cs" />
+    <Compile Include="DTOs\Menu\MenuDTO.cs" />
+    <Compile Include="DTOs\SocialMedia\SocialMediaDTO.cs" />
+    <Compile Include="DTOs\Testimonial\TestimonialDTO.cs" />
+    <Compile Include="DTOs\User\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

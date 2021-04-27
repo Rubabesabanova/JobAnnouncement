@@ -186,3 +186,6 @@ C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\System.Threading.
 C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\Unity.Abstractions.pdb
 C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\Unity.Container.pdb
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\JobAnnouncement.DAL.dll
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\JobAnnouncement.DAL.pdb
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.BLL\bin\JobAnnouncement.DAL.dll.config

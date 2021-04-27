@@ -7,9 +7,9 @@ using JobAnnouncement.DAL.DAOs.User;
 using JobAnnouncement.DAL.JobDbContext;
 using JobAnnouncement.DAL.Repositories;
 
-namespace JobAnnouncement.DAL.Repositories.User
+namespace JobAnnouncement.BLL.Repositories.User
 {
-    public class UserRepository : BaseRepository<UserDAO, JobAnnouncementDbContext>, IUserRepository
+    public class UserRepository : BaseRepository<UserDAO, UserDTO, JobAnnouncementDbContext>, IUserRepository
     {
         public UserRepository(JobAnnouncementDbContext dbContext) : base(dbContext)
         {

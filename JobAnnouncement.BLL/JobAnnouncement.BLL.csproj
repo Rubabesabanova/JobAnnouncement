@@ -144,20 +144,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="DTOs\BaseDTO.cs" />
-    <Compile Include="DTOs\CategorySlider\CategorySliderDTO.cs" />
-    <Compile Include="DTOs\Category\CategoryDTO.cs" />
-    <Compile Include="DTOs\Contact\ContactDTO.cs" />
-    <Compile Include="DTOs\JobSlider\JobSliderDTO.cs" />
-    <Compile Include="DTOs\Job\JobDTO.cs" />
-    <Compile Include="DTOs\Menu\MenuDTO.cs" />
-    <Compile Include="DTOs\SocialMedia\SocialMediaDTO.cs" />
-    <Compile Include="DTOs\Testimonial\TestimonialDTO.cs" />
-    <Compile Include="DTOs\User\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\IBaseRepository.cs" />
     <Compile Include="Repositories\User\IUserRepository.cs" />
+    <Compile Include="Repositories\User\UserRepository.cs" />
     <Compile Include="Validators\UserValidator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +168,10 @@
     <ProjectReference Include="..\JobAnnouncement.Common\JobAnnouncement.Common.csproj">
       <Project>{457fecf9-f890-43db-a805-45493fa8ba45}</Project>
       <Name>JobAnnouncement.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobAnnouncement.DAL\JobAnnouncement.DAL.csproj">
+      <Project>{e6de85eb-6f4d-44fe-8c80-031ba14580cc}</Project>
+      <Name>JobAnnouncement.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
