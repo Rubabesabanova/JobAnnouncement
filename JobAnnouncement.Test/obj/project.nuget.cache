@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UgONX3XS9ffKBH/9aHuq4KKbRXtmjqH/LDU6tdL0PFRC1jda+mHyYc93YRVnivtFwFOxrAyKea4814HzIaGyLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\JobAnnouncementMVC\\JobAnnouncement.Test\\JobAnnouncement.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

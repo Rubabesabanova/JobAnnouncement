@@ -1,0 +1,9 @@
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\bin\Debug\netstandard2.0\JobAnnouncement.Test.deps.json
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\bin\Debug\netstandard2.0\JobAnnouncement.Test.dll
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\bin\Debug\netstandard2.0\JobAnnouncement.Test.pdb
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.AssemblyInfo.cs
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.dll
+C:\Users\hp\Desktop\JobAnnouncementMVC\JobAnnouncement.Test\obj\Debug\netstandard2.0\JobAnnouncement.Test.pdb
