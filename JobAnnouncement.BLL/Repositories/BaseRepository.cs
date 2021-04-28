@@ -11,9 +11,10 @@ using JobAnnouncement.DAL.Repositories;
 
 namespace JobAnnouncement.BLL.Repositories
 {
-    public class BaseRepository<TDao, TDto, TContext> : IBaseRepository<TDto, TDao>
+    public class BaseRepository<TDao, TDto, TContext, Base> : IBaseRepository<TDto, TDao, Base>
      where TDao: BaseDAO
      where TDto : BaseDTO
+     where Base: JobAnnouncement.DAL.Repositories.BaseRepository<TDao,TContext>
      where TContext : DbContext
     {
         private TContext _tdbcontext;
@@ -27,8 +28,8 @@ namespace JobAnnouncement.BLL.Repositories
 
         public BaseRepository(TContext tdbcontext, BaseRepository<TDao, TContext> baseRepository)
         {
-            _baserepository = baseRepository;
-            _tdbcontext = tdbcontext;
+            this._baserepository = baseRepository;
+            this._tdbcontext = tdbcontext;
         }
         public ICollection<TDto> GetAll()
         {

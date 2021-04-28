@@ -8,8 +8,9 @@ using JobAnnouncement.DAL.DAOs;
 
 namespace JobAnnouncement.BLL.Repositories
 {
-    public interface IBaseRepository<TDto, TDao> where TDto : BaseDTO
+    public interface IBaseRepository<TDto, TDao, IBase> where TDto : BaseDTO
         where TDao: BaseDAO
+        where IBase: JobAnnouncement.DAL.Repositories.IBaseRepository<TDao>
     {
         ICollection<TDto> GetAll();
         TDto GetById(int id);

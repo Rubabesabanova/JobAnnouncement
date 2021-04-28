@@ -8,7 +8,7 @@ using JobAnnouncement.DAL.DAOs.User;
 
 namespace JobAnnouncement.BLL.Repositories.User
 {
-    public interface IUserRepository : IBaseRepository<UserDTO, UserDAO>
+    public interface IUserRepository : IBaseRepository<UserDTO, UserDAO, JobAnnouncement.DAL.Repositories.User.IUserRepository>
     {
     }
 }

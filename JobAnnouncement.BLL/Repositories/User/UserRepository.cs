@@ -9,7 +9,7 @@ using JobAnnouncement.DAL.Repositories;
 
 namespace JobAnnouncement.BLL.Repositories.User
 {
-    public class UserRepository : BaseRepository<UserDAO, UserDTO, JobAnnouncementDbContext>, IUserRepository
+    public class UserRepository : BaseRepository<UserDAO, UserDTO, JobAnnouncementDbContext, JobAnnouncement.DAL.Repositories.User.UserRepository>, IUserRepository
     {
         public UserRepository(JobAnnouncementDbContext dbContext) : base(dbContext)
         {
